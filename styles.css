@@ -1,0 +1,193 @@
+/* Basic styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Header and Footer styling */
+header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f39c12;
+  padding: 1rem;
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+/* Main Flexbox Layout */
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+/* Sidebar, Main, and Extra info */
+.sidebar {
+  flex: 1 1 25%;
+  background-color: #ecf0f1;
+  padding: 1rem;
+  border: 1px solid #bdc3c7;
+}
+
+.main-content {
+  flex: 1 1 50%;
+  background-color: #e74c3c;
+  color: white;
+  padding: 1rem;
+  border: 1px solid #c0392b;
+}
+
+/* Extra Info Section */
+.extra-info {
+  flex: 1 1 25%;
+  background-color: #8e44ad;
+  color: white;
+  padding: 1rem;
+  border: 1px solid #7f8c8d;
+}
+
+/* Services Section */
+.services {
+  background-color: #27ae60;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.service-items {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.service-item {
+  background-color: #2ecc71;
+  padding: 1rem;
+  border: 1px solid #27ae60;
+  color: white;
+  flex: 1;
+  margin: 0 0.5rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+  background-color: #f39c12;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.testimonial-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.testimonial-item {
+  background-color: #f1c40f;
+  padding: 1rem;
+  border: 1px solid #f39c12;
+  color: white;
+  flex: 1;
+  margin: 0 0.5rem;
+}
+
+/* Call to Action */
+.call-to-action {
+  background-color: #3498db;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #2980b9;
+  color: white;
+  text-decoration: none;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+
+/* Media Queries */
+
+/* Mobile */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar, .main-content, .extra-info {
+    flex: 1 1 100%;
+    margin-bottom: 1rem;
+  }
+
+  .service-items, .testimonial-items {
+    flex-direction: column;
+  }
+}
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1024px) {
+  main {
+    flex-direction: column-reverse;
+  }
+
+  .sidebar, .main-content, .extra-info {
+    flex: 1 1 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .sidebar {
+    flex: 1 1 25%;
+  }
+
+  .main-content {
+    flex: 1 1 50%;
+  }
+
+  .extra-info {
+    flex: 1 1 25%;
+  }
+
+  .service-items, .testimonial-items {
+    flex-direction: row;
+  }
+}
