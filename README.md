@@ -6,22 +6,7 @@ Crear una página web responsiva usando Flexbox y media queries. La página debe
 
 ## Instrucciones:
 
-### 1. Estructura HTML:
-
-- Crear un archivo HTML que contenga:
-  - Un **header** (encabezado).
-  - Un **nav** (barra de navegación) con al menos 4 enlaces.
-  - Un **main** con las siguientes secciones:
-    - Un **aside** (barra lateral).
-    - Una sección de **contenido principal**.
-    - Una sección de **información adicional**.
-    - Dentro de la sección de contenido principal, agregar:
-      - Un bloque de **servicios** con tres elementos.
-      - Un bloque de **testimonios** con tres opiniones.
-      - Un bloque de **llamada a la acción** con un botón.
-  - Un **footer** (pie de página).
-
-### 2. Media Queries:
+### 1. Media Queries:
 
 - Agregar media queries para asegurar que la página sea responsiva:
   - **Móvil (máximo 600px)**:
@@ -32,7 +17,7 @@ Crear una página web responsiva usando Flexbox y media queries. La página debe
   - **Escritorio (más de 1024px)**:
     - Las tres columnas (sidebar, contenido principal e información adicional) deben mostrarse en una sola fila.
 
-### 3. Colores y Estilos:
+### 2. Colores y Estilos:
 
 - Aplica diferentes colores de fondo y bordes para distinguir cada sección:
   - **Header**: Fondo verde (#4CAF50), texto blanco.
